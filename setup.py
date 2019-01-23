@@ -7,7 +7,7 @@ setup(name='weeblycloud',
       author='Daniel Nussbaum',
       author_email='daniel.e.nussbaum@gmail.com',
       license='Weebly',
-      packages=['weeblycloud'],
+      packages=['weeblycloud', 'weeblycloud.cloudclient'],
       install_requires=[
           'requests'
       ],
