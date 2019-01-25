@@ -16,7 +16,7 @@ class Plan(CloudResource):
 		plan = response.json['plans']
 
 		# Plan has a weird return format
-		self.properties = plan.itervalues().next()
+		self.properties = plan[str(self.plan_id)]
 
 	def id(self):
 		"""Return the plan_id"""
